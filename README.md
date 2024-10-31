@@ -1,2 +1,6 @@
 # CreditCard_fraud_transactions
 CreditCard_Fraud_Transactions
+
+To tackle the challenge of identifying fraudulent transactions in a highly imbalanced dataset, we took a structured approach. We began by understanding the nature of the data, where only 0.5% of transactions were fraudulent. To enhance our model’s ability to spot fraud, we created new features such as transaction timing, customer behavior patterns, and merchant fraud rates. These features acted like clues, helping the model recognize patterns that could indicate fraud. Additionally, we used SMOTE to generate synthetic fraud cases and under-sampling to reduce the overwhelming number of legitimate transactions. This balancing helped the model focus on spotting fraud more effectively.
+
+We tested several machine learning models, including Random Forest and XGBoost, to find the best algorithm for the task. XGBoost performed well after fine-tuning with GridSearchCV, which optimized its settings for maximum accuracy. The result was a model that could identify many fraudulent transactions, though detecting the most elusive fraud cases remains a challenge. Overall, this approach gave us a powerful tool to improve fraud detection and protect both the company and its customers.
